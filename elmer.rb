@@ -16,7 +16,7 @@ class Elmer < Formula
   option "with-qt5", "Use qt5 with ElmerGUI"
   option "with-find-gcc", "Use heuristics to find the gcc compiler binary"
 
-  depends_on :mpi => [:f90, :recommended]
+  depends_on "open-mpi" => [:f90, :recommended]
 
   depends_on "cmake" => :build
   depends_on :fortran => :build
